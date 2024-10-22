@@ -3,8 +3,6 @@ body {
   margin: 0;
   font-family: "Prata", system-ui;
   font-weight: normal;
-  display: flex;
-  height: 100vh;
 }
 
 .container {
@@ -83,6 +81,10 @@ p {
   margin: 10px 0;
   text-decoration: none;
   color: #ffffff;
+  font-weight: normal;
+  text-align: center;
+  font-size: 32px;
+
  }
  .link-h1:hover{
    text-decoration: underline;
