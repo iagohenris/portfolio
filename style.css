@@ -27,7 +27,7 @@ body {
   height: auto;
 }
 .sidebar.small {
-  max-width: 200px;
+  max-width: 100px;
 }
 
 .sidebar:last-child {
@@ -87,7 +87,7 @@ p {
   color: #ffffff;
   font-weight: normal;
   text-align: center;
-  font-size: 14pt;
+  font-size: 12pt;
 
  }
  .link-h1:hover{
