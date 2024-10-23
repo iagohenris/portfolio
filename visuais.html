@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página no GitHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar small">
+      <a href="/portfolio" class='link-h1'>Home</a>
+      <a href="/portfolio/curriculo" class='link-h1'><strong>Currículo</strong></a>
+      <a href="/portfolio/" class='link-h1'>Visuais</a>
+      <a href="/portfolio/" class='link-h1'>Códigos</a>
+    </div>
+    <div class="slideshow">
+      <!--slide images start-->
+        <img id="slide" src="/imagens/Tarefa_11_1.png" alt="">
+        <a class="prev" onclick="showPrevImage()">&#10094;</a>
+        <a class="next" onclick="showNextImage()">&#10095;</a>
+      <script>
+        const images = [
+          "/imagens/Tarefa_11_2.png",
+          "/imagens/Tarefa_11_3.png",
+          "/imagens/Tarefa_11_4.png",
+          "/imagens/kernell.png",
+          "/imagens/Gráfico_Renda.png",
+          "/imagens/Gráfico_AnosMoradia.png",
+          "/imagens/Demanda.png",
+          "/imagens/ACIDENTES_ANO_2.png",
+        ];
+        let currentSlide = 0;
+        function showNextImage() {
+          currentSlide = (currentSlide + 1) % images.length;
+          document.getElementById('slide').src = images[currentSlide];
+        }
+
+        function showPrevImage() {
+          currentSlide = (currentSlide - 1) % images.length;
+          document.getElementById('slide').src = images[currentSlide];
+        }
+
+
+        setInterval(showNextImage, 5000);
+      </script>
+
+    </div>
+  </div>
+</body>
+</html>
